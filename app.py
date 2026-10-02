@@ -698,11 +698,5 @@ if question:
                     "Please check your GROQ_API_KEY."
                 )
 
-            else:
-
-                st.error(
-                    "The Groq request failed. "
-                    "Please check your internet connection, "
-                    "API key, model availability, and Groq "
-                    "service status."
-                )
+           else:
+    st.error(f"Groq error: {error}")
